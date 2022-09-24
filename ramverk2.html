@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-    <header>
+    <header class="w3-container">
         <h1>Ramverket W3.CSS</h1>
         <nav class="w3-bar w3-black">
             <a href="index.html" class="w3-bar-item w3-button">Start</a>
@@ -19,7 +19,7 @@
             <a href="publicering.html" class="w3-bar-item w3-button">Publicering</a>
         </nav>
     </header>
-    <main>
+    <main class="w3-container">
         <h2>Information om W3.CSS</h2>
         <p>W3.CSS skapades av "W3Schools" och laddas hem via deras webbplats. Ramverket skapades med målsättningen att vara en konkurrent till Bootstrap, men enklare och mindre.</p>
         <h3>Fördelar med ramverket</h3>
@@ -28,8 +28,66 @@
         <p>Det är inte alls lika populärt som Bootstrap, och innehåller inte lika mycket funktioner. Som professionell webbutvecklare kan Bootstrap vara ett smartare val att fördjupa sig i och lära sig ifall tiden bara räcker til latt sätta sig in i ett ramverk.</p>
         <h3>Länk till ramverkets webbplats:</h3>
         <p>Här är en länk till ramverkets officiella webbplats: <br><a href="https://www.w3schools.com/w3css/default.asp">https://www.w3schools.com/w3css/default.asp</a></p>
+        <h3>Exempel på tabell och formulär:</h3>
+        <table class="w3-table-all">
+            <thead>
+                <tr>
+                    <th>Namn</th>
+                    <th>Yrke</th>
+                    <th>Beskrivning</th>
+                    <th>Accepterat villkoren</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Torsten Olofsson</td>
+                    <td>Snickare</td>
+                    <td>En duktig snickare som arbetat med trä hela livet.</td>
+                    <td>Ja</td>
+                </tr>
+                <tr>
+                    <td>Lisa Karlsson</td>
+                    <td>Bibliotekarie</td>
+                    <td>Är en person som älskar böcker, speciellt deckare.</td>
+                    <td>Ja</td>
+                </tr>
+                <tr>
+                    <td>Mohammed Svensson</td>
+                    <td>Arbetslös</td>
+                    <td>Tycker om att fiska och jaga.</td>
+                    <td>Ja</td>
+                </tr>
+                <tr>
+                    <td>Felix Andersson</td>
+                    <td>Ordningsvakt</td>
+                    <td>Brottar ner männsikor på lördagskvällarna.</td>
+                    <td>Nej</td>
+                </tr>
+                <tr>
+                    <td>Åsa Svensson</td>
+                    <td>Undersköterska</td>
+                    <td>Gillar att arbeta med människor och att hjälpa personer.</td>
+                    <td>Ja</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Lägg till</h4>
+        <form class="w3-container" action="#" method="POST">
+            <label for="namn">Namn:</label> <input class="w3-input w3-border" type="text" id="namn" name="namn"> <br>
+            <label for="yrke">Yrke:</label> <select class="w3-select w3-margin-bottom" id="yrke" name="yrke">
+                <option value="snickare">Snickare</option>
+                <option value="bibliotikarie">Bibliotikarie</option>
+                <option value="ordningsvakt">Ordningsvakt</option>
+                <option value="undersköterska">Undersköterska</option>
+                <option value="arbetslös">Arbetslös</option>
+            </select> <br>
+            <label for="beskrivning">Beskrivning:</label>
+            <textarea class="w3-input w3-border" name="beskrivning" id="beskrivning"></textarea> <br>
+            <label for="villkor">Jag accepterar villkoren </label><input class="w3-check" type="checkbox" id="villkor" name="villkor"><br> 
+            <input class="w3-button w3-black w3-margin-top" type="submit" value="Lägg till data">
+        </form>
     </main>
-    <footer>
+    <footer class="w3-container">
         <p>Av: Marcus Andersson, <a href="mailto:maan2117@student.miun.se">maan2117@student.miun.se</a></p>
     </footer>
 </body>

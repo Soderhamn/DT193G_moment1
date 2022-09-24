@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
     <!-- Milligram CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
 </head>
+
 <body class="container">
     <header>
         <h1>Ramverket Milligram</h1>
@@ -26,21 +28,79 @@
     </header>
     <main>
         <h2>Information om Milligram</h2>
-        <p>Milligram är ett så kallat "minimalistiskt" CSS-ramverk som ska vara enkelt och snabbt att komma igång med, men som inte innehåller allt. Den här undersidan är ett exempel på en sida som använder Milligram.</p>
+        <p>Milligram är ett så kallat "minimalistiskt" CSS-ramverk som ska vara enkelt och snabbt att komma igång med,
+            men som inte innehåller allt. Den här undersidan är ett exempel på en sida som använder Milligram.</p>
         <h3>Fördelar med ramverket</h3>
-        <p>Jag upplever att ramverket verkar enkelt att komma igång med för mig som "nybörjare" på CSS-ramverk. Jag tycker också att dess standard-uteseende ser rätt bra ut. Ramverket har också en tydlig och lättöverskådlig dokumentation.</p>
+        <p>Jag upplever att ramverket verkar enkelt att komma igång med för mig som "nybörjare" på CSS-ramverk. Jag
+            tycker också att dess standard-uteseende ser rätt bra ut. Ramverket har också en tydlig och lättöverskådlig
+            dokumentation.</p>
         <h3>Nackdelar med ramverket</h3>
-        <p>Allt finns inte. Exempelvis finns inget inbyggt stöd för Navbars.</p>
+        <p>Allt som behövs för att bygga utseendet till en komplett webbplats finns inte. Exempelvis finns inget inbyggt stöd för Navbars.</p>
         <h3>Länk till ramverkets webbplats:</h3>
-        <p>Här är en länk till ramverkets officiella webbplats: <br><a href="https://milligram.io/">https://milligram.io/</a></p>
+        <p>Här är en länk till ramverkets officiella webbplats: <br><a
+                href="https://milligram.io/">https://milligram.io/</a></p>
+        <h3>Exempel på tabell och formulär:</h3>
         <table>
-            <th>
-                <td></td>
-            </th>
+            <thead>
+                <tr>
+                    <th>Namn</th>
+                    <th>Yrke</th>
+                    <th>Beskrivning</th>
+                    <th>Accepterat villkoren</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Torsten Olofsson</td>
+                    <td>Snickare</td>
+                    <td>En duktig snickare som arbetat med trä hela livet.</td>
+                    <td>Ja</td>
+                </tr>
+                <tr>
+                    <td>Lisa Karlsson</td>
+                    <td>Bibliotekarie</td>
+                    <td>Är en person som älskar böcker, speciellt deckare.</td>
+                    <td>Ja</td>
+                </tr>
+                <tr>
+                    <td>Mohammed Svensson</td>
+                    <td>Arbetslös</td>
+                    <td>Tycker om att fiska och jaga.</td>
+                    <td>Ja</td>
+                </tr>
+                <tr>
+                    <td>Felix Andersson</td>
+                    <td>Ordningsvakt</td>
+                    <td>Brottar ner männsikor på lördagskvällarna.</td>
+                    <td>Nej</td>
+                </tr>
+                <tr>
+                    <td>Åsa Svensson</td>
+                    <td>Undersköterska</td>
+                    <td>Gillar att arbeta med människor och att hjälpa personer.</td>
+                    <td>Ja</td>
+                </tr>
+            </tbody>
         </table>
+        <h4>Lägg till</h4>
+        <form action="#" method="POST">
+            <label for="namn">Namn:</label> <input type="text" id="namn" name="namn"> <br>
+            <label for="yrke">Yrke:</label> <select id="yrke" name="yrke">
+                <option value="snickare">Snickare</option>
+                <option value="bibliotikarie">Bibliotikarie</option>
+                <option value="ordningsvakt">Ordningsvakt</option>
+                <option value="undersköterska">Undersköterska</option>
+                <option value="arbetslös">Arbetslös</option>
+            </select> <br>
+            <label for="beskrivning">Beskrivning:</label>
+            <textarea name="beskrivning" id="beskrivning"></textarea> <br>
+            <label for="villkor">Jag accepterar villkoren</label><input type="checkbox" id="villkor" name="villkor"><br> 
+            <input type="submit" value="Lägg till data">
+        </form>
     </main>
     <footer>
         <p>Av: Marcus Andersson, <a href="mailto:maan2117@student.miun.se">maan2117@student.miun.se</a></p>
     </footer>
 </body>
+
 </html>

@@ -37,13 +37,71 @@
         <p>Det är svårare att lära sig och komma igång med jämfört med Milligram och W3.CSS. Det kan synas på en webbplats att den är skapad med Bootstrap, den blir därmed inte så unik.</p>
         <h3>Länk till ramverkets webbplats:</h3>
         <p>Här är en länk till ramverkets officiella webbplats: <br><a href="https://getbootstrap.com/">https://getbootstrap.com/</a></p>
+        <h3>Exempel på tabell och formulär:</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Namn</th>
+                    <th>Yrke</th>
+                    <th>Beskrivning</th>
+                    <th>Accepterat villkoren</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Torsten Olofsson</td>
+                    <td>Snickare</td>
+                    <td>En duktig snickare som arbetat med trä hela livet.</td>
+                    <td>Ja</td>
+                </tr>
+                <tr>
+                    <td>Lisa Karlsson</td>
+                    <td>Bibliotekarie</td>
+                    <td>Är en person som älskar böcker, speciellt deckare.</td>
+                    <td>Ja</td>
+                </tr>
+                <tr>
+                    <td>Mohammed Svensson</td>
+                    <td>Arbetslös</td>
+                    <td>Tycker om att fiska och jaga.</td>
+                    <td>Ja</td>
+                </tr>
+                <tr>
+                    <td>Felix Andersson</td>
+                    <td>Ordningsvakt</td>
+                    <td>Brottar ner männsikor på lördagskvällarna.</td>
+                    <td>Nej</td>
+                </tr>
+                <tr>
+                    <td>Åsa Svensson</td>
+                    <td>Undersköterska</td>
+                    <td>Gillar att arbeta med människor och att hjälpa personer.</td>
+                    <td>Ja</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Lägg till</h4>
+        <form action="#" method="POST">
+            <label for="namn">Namn:</label> <input class="form-control" type="text" id="namn" name="namn"> <br>
+            <label for="yrke">Yrke:</label> <select class="form-select" id="yrke" name="yrke">
+                <option value="snickare">Snickare</option>
+                <option value="bibliotikarie">Bibliotikarie</option>
+                <option value="ordningsvakt">Ordningsvakt</option>
+                <option value="undersköterska">Undersköterska</option>
+                <option value="arbetslös">Arbetslös</option>
+            </select> <br>
+            <label for="beskrivning">Beskrivning:</label>
+            <textarea class="form-control" name="beskrivning" id="beskrivning"></textarea> <br>
+            <label class="form-check-label" for="villkor">Jag accepterar villkoren</label><input class="form-check-input" type="checkbox" id="villkor" name="villkor"><br> 
+            <input type="submit" class="btn btn-primary" value="Lägg till data">
+        </form>
         <table>
             <th>
                 <td></td>
             </th>
         </table>
     </main>
-    <footer class="container-fluid fixed-bottom">
+    <footer class="container-fluid">
         <p>Av: Marcus Andersson, <a href="mailto:maan2117@student.miun.se">maan2117@student.miun.se</a></p>
     </footer>
 </body>
